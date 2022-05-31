@@ -4,7 +4,7 @@ After=network-online.target
 [Service]
 User=pi
 Group=pi
-WorkingDirectory=/home/pi/Documents/rpi_osc_gpio
+WorkingDirectory=/home/pi/Documents/osc_rpi_shutdown
 Type=simple
 ExecStartPre=/usr/bin/sleep 10
 ExecStart=/usr/bin/python -u main.py
