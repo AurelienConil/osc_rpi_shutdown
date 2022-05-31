@@ -1,0 +1,13 @@
+[Unit]
+Description= OSC GPIO
+After=network-online.target
+[Service]
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/Documents/rpi_osc_gpio
+Type=simple
+ExecStartPre=/usr/bin/sleep 10
+ExecStart=/usr/bin/python -u main.py
+Restart=on-abort
+[Install]
+WantedBy=multi-user.target

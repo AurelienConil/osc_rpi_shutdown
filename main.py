@@ -10,7 +10,7 @@ import socket
 import sys
 
 PORT = 12344
-MAIN_PATH = "/home/Documents/osc_rpi_shutdown"
+MAIN_PATH = "/home/pi/Documents/osc_rpi_shutdown"
 
 class SimpleServer(OSCServer):
     def __init__(self, t):
